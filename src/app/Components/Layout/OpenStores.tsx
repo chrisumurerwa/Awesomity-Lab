@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+
 import { FaSearch, FaSlidersH, FaChevronRight, FaHeart, FaShoppingCart, FaEnvelope, FaArrowRight } from "react-icons/fa";
 
 const storeColors = [
@@ -129,9 +130,10 @@ const OpenStores: React.FC = () => {
       <div className="w-full max-w-xs sticky top-8 self-start bg-white rounded-2xl shadow p-4 border border-gray-100">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
+
          <div className="flex items-center gap-2 text-base font-semibold text-gray-800">
-  <img src="/openstore.png" alt="Store Icon" className="w-5 h-5" />
-  Top 10 Stores
+  <img src="/store.png" alt="Store Icon" className="w-5 h-5" />
+  <h1 > Top 10 Stores</h1>
 </div>
 
         </div>

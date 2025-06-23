@@ -1,7 +1,9 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import { Twitter, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { RiYoutubeLine } from "react-icons/ri";
+import { LuLinkedin } from "react-icons/lu";
 
 const Footer: React.FC = () => {
   return (
@@ -29,16 +31,16 @@ const Footer: React.FC = () => {
         {/* Right Side - Social Media Icons */}
         <div className="flex items-center gap-2">
           <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">
-            <Twitter className="w-4 h-4" />
+            <FaXTwitter className="w-4 h-4" />
           </a>
           <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">
-            <Instagram className="w-4 h-4" />
+            <FaInstagram className="w-4 h-4" />
           </a>
           <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">
-            <Youtube className="w-4 h-4" />
+            < RiYoutubeLine className="w-4 h-4" />
           </a>
           <a href="#" className="text-gray-500 hover:text-gray-700 transition-colors">
-            <Linkedin className="w-4 h-4" />
+            < LuLinkedin className="w-4 h-4" />
           </a>
         </div>
       </div>
