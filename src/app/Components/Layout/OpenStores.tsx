@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { FaSearch, FaSlidersH, FaChevronRight, FaHeart, FaShoppingCart, FaEnvelope, FaArrowRight } from "react-icons/fa";
 
@@ -46,10 +47,15 @@ const OpenStores: React.FC = () => {
         <div>
           {/* Header */}
           <div className="flex items-center gap-2 mb-6">
-            <span className="bg-lime-300 p-2 rounded-lg">
-              <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><rect width="20" height="20" rx="4" fill="currentColor"/></svg>
-            </span>
-            <h1 className="text-lg md:text-xl font-bold text-gray-800">Recent Products (100)</h1>
+          
+
+          <div className="flex items-center space-x-2">
+  <img src="openstore.png" alt="Icon" className="w-6 h-6" />
+  <h1 className="text-lg md:text-xl font-bold text-gray-800">
+    Recent Products (100)
+  </h1>
+</div>
+
           </div>
           {/* Product Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -123,12 +129,11 @@ const OpenStores: React.FC = () => {
       <div className="w-full max-w-xs sticky top-8 self-start bg-white rounded-2xl shadow p-4 border border-gray-100">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-2 text-base font-semibold text-gray-800">
-            <span className="bg-lime-300 p-2 rounded-lg">
-              <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><rect width="20" height="20" rx="4" fill="currentColor"/></svg>
-            </span>
-            Top 10 Stores
-          </div>
+         <div className="flex items-center gap-2 text-base font-semibold text-gray-800">
+  <img src="/openstore.png" alt="Store Icon" className="w-5 h-5" />
+  Top 10 Stores
+</div>
+
         </div>
         {/* Search Bar */}
         <div className="flex items-center bg-gray-50 rounded-lg px-3 py-2 mb-4 border border-gray-100">
